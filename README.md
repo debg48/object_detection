@@ -1,2 +1,2 @@
-# simplest_gans
+# simplest_gan
 Simplest GAN possible
