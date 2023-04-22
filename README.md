@@ -1,2 +1,1 @@
-# simplest_gan
-Simplest GAN possible
+# Real Time Object Detection
