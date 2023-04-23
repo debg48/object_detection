@@ -2,8 +2,8 @@ import cv2
 
 cap=cv2.VideoCapture(0)
 
-ret,frame = cap.read()
+while True :
+    ret,frame = cap.read()
 
-cv2.imshow("frame",frame)
-
-cv2.waitKey(0)
+    cv2.imshow("frame",frame)
+    cv2.waitKey(1)
