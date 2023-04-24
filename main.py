@@ -13,10 +13,17 @@ while True :
     ret,frame = cap.read()
 
     # object detection
-    (class_id,score,bboxes)=model.detect(frame)
-    print("class ids :",class_id)
-    print("scores :",score)
-    print("bounding boxes:",bboxes)
+    (class_ids,scores,bboxes)=model.detect(frame)
+
+    for class_id,score,bbox in zip(class_ids,scores,bboxes):
+       (x,y,w,h)=bbox
+       #print(x,y,w,h)
+       cv2.rectangle(frame,(x,y),(x+w,y+h),(200,0,50),2) 
+
+
+    # print("class ids :",class_id)
+    # print("scores :",score)
+    # print("bounding boxes:",bboxes)
 
     cv2.imshow("frame",frame)
     cv2.waitKey(1)
