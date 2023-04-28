@@ -12,8 +12,8 @@ with open('dnn_model\classes.txt','r') as file_object :
         class_name=class_name.strip()
         classes.append(class_name)
 
-print("Object List")
-print(classes)
+# print("Object List")
+# print(classes)
 
 
 #initialize camera 
