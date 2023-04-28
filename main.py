@@ -12,6 +12,10 @@ with open('dnn_model\classes.txt','r') as file_object :
         class_name=class_name.strip()
         classes.append(class_name)
 
+print("Object List")
+print(classes)
+
+
 #initialize camera 
 cap=cv2.VideoCapture(0)
 
@@ -24,8 +28,9 @@ while True :
 
     for class_id,score,bbox in zip(class_ids,scores,bboxes):
        (x,y,w,h)=bbox
+       class_name = classes[class_id]
        #print(x,y,w,h)
-       cv2.putText(frame,str(class_id),(x,y-10),cv2.FONT_HERSHEY_PLAIN,2,(200,0,50),2)
+       cv2.putText(frame,str(class_name),(x,y-10),cv2.FONT_HERSHEY_PLAIN,2,(200,0,50),2)
        cv2.rectangle(frame,(x,y),(x+w,y+h),(200,0,50),3) 
 
 
