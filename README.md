@@ -5,6 +5,8 @@
 ### Files :
 Please download the following files and put them inside the code directory for the code to work :
 
+[Files](https://drive.google.com/drive/folders/17vOxgYuEvam6Uq8i1iirIdT6FlPTJnsI?usp=sharing)
+
 The link contains the following files :
 
 * classes.txt (This file contains the different classes the YOLOv4-tiny model is able to detect)
