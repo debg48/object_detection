@@ -19,3 +19,11 @@ The model used for the project is YOLOv4-tiny
 
 * [Arxiv](https://arxiv.org/abs/2004.10934)
 * [Github](https://github.com/AlexeyAB/darknet/releases)
+
+## Downloading the code 
+
+``` git clone <repo link> ```
+
+### Here is a demo image of the project :
+
+<img src="images/ss.png"/>
